@@ -25,7 +25,7 @@ button{
     cursor:pointer;
 }
 section{
-    margin-top:3rem;
+    margin-top:5rem;
 }
 body{
     background-color:#e4e9ff;
@@ -154,20 +154,24 @@ ul{
 .time{
     position:fixed;
     top:4rem;
-    right:.5rem;
+    left:.5rem;
+    background:#274091;
+    color:#fff;
+    padding:5px;
+}
+.time h1{
+    font-size:18px;
+    font-weight:100;
+}
+.clock{
     display:flex;
     justify-content:center;
     align-items:center;
-    flex-direction:column;
-    background:#274091;
-    color:#fff;
-}
-.day{
-    width:6rem;
     padding:5px;
 }
-
-
+.clock h1{
+    font-size:18px;
+}
 
 /* Skills */
 .skills{
@@ -235,31 +239,28 @@ ul{
     color:#fff;
     text-align:center;
 }
-.personal-sites{
-    display:flex;
-    justify-content:space-around;
-}
 .learning-sites{
+    margin-top:.5rem;
+    margin-bottom:.5rem;
     display:flex;
-    justify-content:space-around;
-    color:lightblue;
-    padding:10px;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
 }
-.learning-sites a{
-    transition:.2s ease-in;
+.links{
+    padding:none;
+    font-size:14px;
+    color:#7b7bff;
 }
-.learning-sites a:hover{
-    color:#fff;
-    background:#020024;
-    padding:2px;
+.links a{
+    margin-right:40px;
 }
 .contact .property{
     color:#fff;
-    font-size:16px;
+    font-size:12px;
 }
 
-
-
+/* Media screen height */
 @media screen and (max-width:720px){
     .menu{
         position:absolute;

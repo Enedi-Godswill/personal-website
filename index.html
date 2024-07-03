@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="icon" href="./images/">
     <title>Enedi</title>
 </head>
 <body>
@@ -31,6 +30,7 @@
                     </li>
                 </ul>
             </div>
+
             <div class="menu-btns list">
                 <button class="menu-btn" id="menu-btn">
                     <img class="open-icon" src="./icons/menu.svg" alt="">
@@ -41,6 +41,7 @@
                     <img class="moon-icon" src="./icons/dark_mode.svg" alt="">
                 </button>
             </div>
+
         </nav>
 
         <div class="hero list">
@@ -53,9 +54,13 @@
             </div>
 
             <div class="time" data-testid="currentTimeUTC" id="time">
-                <div class="day" id="day">
-                    <p>day</p>
+                <h1>Time</h1>
+                <div data-testid="currentTimeUTC" class="clock">
+                    <div id="hours">00</div><p>:</p>
+                    <div id="minutes">00</div><p>:</p>
+                    <div id="seconds">00</div>
                 </div>
+                <div data-testid="currentDay" id="weekday">weekday</div>
             </div>
         </div>
 
@@ -120,15 +125,18 @@
 
     <section class="contact" id="contact">
         <div class="contact-info">
-            For more information on how to learn Frontend Web Development </br>
-            <div class="personal-sites">
-                <a href="https://www.gmail.com/bobbyenedi@gmail.com/" class="email">Gmail</a>
-                <a href="https://www.gmail.com/bobbyenedi@gmail.com/" class="email">Linkedin</a>
+            
+            <div class="personal-links">
+                <p data-testid="slackEmail" >For more information, contact me at bobbyenedi@gmail.com</p>
             </div>
+
             <div class="learning-sites">
-                <a href="https://www.hng.tech/learn/">HNG</a>
-                <a href="https://www.keyword.dog/">Keyword.dog</a>
-                <a href="https://www.scrapeanyweb.site/">scrapeanyweb.site</a>
+                <p> For more information on how to learn Frontend Web Development</p>
+                <div class="links">
+                    <a data-testid="hgnLink" href="https://www.hng.tech/learn/">HNG</a>
+                    <a data-testid="keywordLink" href="https://www.keyword.dog/">Keyword.dog</a>
+                    <a data-testid="scrapeanywebLink" href="https://www.scrapeanyweb.site/">scrapeanyweb.site</a>
+                </div>
             </div>
         </div>
         <p class="property">Property of Enedi Godswill</p>
