@@ -261,7 +261,7 @@ ul{
 }
 
 /* Media screen height */
-@media screen and (max-width:720px){
+@media screen and (max-width:1020px){
     .menu{
         position:absolute;
         right:2.4rem;
